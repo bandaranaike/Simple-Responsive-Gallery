@@ -206,7 +206,6 @@ var timer;
 				$item.to(0, 0, false);
 			}else{
 				$item.to($item.current, undefined, true);
-				fullScreen($item[0]);
 			}
 			$(this).toggleClass('active');
 		});

@@ -139,7 +139,7 @@ var timer;
 			24,
 		]
 	};
-	
+
 	/* Инициализация галерей */
 	var $all = {};
 	$('[data-pn]').each(function(index, item){
@@ -199,7 +199,7 @@ var timer;
 		}
 
 		var lis = '<div class="pn-carret"></div>';
-		$item.addClass('pn-container').css('width','100%').css('height','705px')
+		$item.addClass('pn-container')//.css('width','100%').css('height','705px')
 		.html('<span class="pn-fullscreen fa fa-2x fa-arrows-alt"></span><div class="pn-current"></div><div class="pn-prev"><i class="fa fa-angle-left"></i></div><div class="pn-next"><i class="fa fa-angle-right"></i></div><div class="pn-bar"></span><span class="fa fa-3x pn-play"><i class="fa-angle-right"></i><i class="fa-angle-left"></i></span><div class="pn-ribbon"><ul class="pn-train"></ul></div></div>')
 		.find('.pn-play').click(function(e){
 			if($(this).hasClass('active')){
@@ -230,8 +230,8 @@ var timer;
 			$item.to($(this).index() - 1, e);
 		});
 	});
-	
-	
+
+
 	/* Подгрузка изображений */
 	var loadImage = function(i, j){
 		var img = new Image;
